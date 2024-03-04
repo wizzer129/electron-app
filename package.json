@@ -1,0 +1,21 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0 && electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/cli": "^5.0.8",
+    "@vue/cli-service": "^5.0.8"
+  },
+  "devDependencies": {
+    "electron": "^29.1.0"
+  }
+}
